@@ -24,7 +24,7 @@ function Header({
   const fetchTasks = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/task/mytask",
+        "https://task-management-server-uuom.onrender.com/api/v1/task/mytask",
         { withCredentials: true }
       );
       setAllTasks(response.data.tasks);

@@ -19,7 +19,7 @@ const UpdateTaskModal = ({
   useEffect(() => {
     const getSingleTask = async () => {
       await axios
-        .get(`http://localhost:4000/api/v1/task/single/${id}`, {
+        .get(`https://task-management-server-uuom.onrender.com/api/v1/task/single/${id}`, {
           withCredentials: true,
         })
         .then((res) => {
